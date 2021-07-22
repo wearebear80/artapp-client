@@ -1,0 +1,41 @@
+.container  {
+  width: 100vw;
+  height: 100vh;
+  min-height: 500px;
+  background-color: #B55126;
+  padding: 90px 30px;
+  position: relative;
+}
+
+.title {
+  padding-bottom: 30px;
+}
+
+.text {
+  font-family: DecimaFont;
+  font-size: 17px;
+  color: #FFFFFF;
+}
+
+.textMid {
+  font-family: DecimaFont;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  line-height: 22px;
+  padding-bottom: 35px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  text-align: center;
+  bottom: 30px;
+}
+
+.arrow {
+  width: 65px;
+  height: 34px;
+}
