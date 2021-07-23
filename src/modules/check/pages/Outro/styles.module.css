@@ -3,7 +3,7 @@
   height: 100vh;
   min-height: 500px;
   background-color: #B55126;
-  padding: 90px 30px;
+  padding: 75px 30px;
   position: relative;
 }
 
@@ -39,11 +39,31 @@
   bottom: 0;
   left: 0;
   width: 100vw;
-  text-align: center;
-  bottom: 30px;
+  height: 100px;
+  padding: 0px 30px;
+  font-family: DecimaFont;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .arrow {
   width: 65px;
   height: 34px;
+}
+
+.link, .link:active, .link:hover{
+  color:#ffffff;
+  text-decoration: underline;
+}
+
+.link:active {
+  color:#dbdbdb;
+}
+
+.smile {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 8px;
 }
