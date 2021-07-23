@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react"
 import { Link } from "react-scroll"
 import { Wrapper } from "../../components"
-import VideoSrc from "../../assets/sum.mp4"
+import VideoSrc from "../../assets/test.MOV"
 import Arrow from "../../assets/arrow.svg"
 import Play from "../../assets/play.svg"
 import Stop from "../../assets/stop.svg"
@@ -46,7 +46,7 @@ const Video = () => {
   return (
     <Wrapper>
       <video id="video" ref={videoEl} onClick={onPlay} className={s.video}>
-        <source src={VideoSrc} type='video/ogg; codecs="theora, vorbis"' />
+        <source src={VideoSrc} />
       </video>
       <div className={s.controls}>
         <Controls state={state} onPlay={onPlay} />
