@@ -43,7 +43,9 @@
 }
 
 .video {
-  width: 100%;
+  width: 150%;
   height: 100vh;
   object-fit: fill;
+  left: -30%;
+  position: relative;
 }

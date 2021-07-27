@@ -15,7 +15,11 @@ const Outro = () => {
         <div className={s.textBig}>
           <div className={s.titleBig}>всё работает? ура! </div>
           почитать о проекте ещё раз или купить билет можно вот{" "}
-          <a href="/" className={s.link}>
+          <a
+            target="_blank"
+            href="https://nn.kassir.ru/teatr/pogrujenie-promenad-spektakl-promenad"
+            className={s.link} rel="noreferrer"
+          >
             здесь
           </a>
         </div>
@@ -25,8 +29,9 @@ const Outro = () => {
           <p>
             Возникли проблемы?
             <br />
-            напишите нам:&nbsp;<br />
-            <a className={s.link} target="_blank" href="http://www.ctm-nn.ru">
+            напишите нам:&nbsp;
+            <br />
+            <a className={s.link} target="_blank" href="http://www.ctm-nn.ru" rel="noreferrer">
               Центр театрального мастерства
             </a>
           </p>

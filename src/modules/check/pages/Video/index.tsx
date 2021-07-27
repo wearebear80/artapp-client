@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react"
 import { Link } from "react-scroll"
 import { Wrapper } from "../../components"
-import VideoSrc from "../../assets/test.MOV"
+import VideoSrc from "./assets/video.mp4"
 import Arrow from "../../assets/arrow.svg"
 import Play from "../../assets/play.svg"
 import Stop from "../../assets/stop.svg"
