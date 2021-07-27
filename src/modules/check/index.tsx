@@ -8,13 +8,14 @@ import Guide from "./pages/Guide"
 import Video from "./pages/Video"
 import Outro from "./pages/Outro"
 import Desktop from "./pages/Desktop"
+import ms from './main_styles.module.css'
 
 const Check = () => {
   if (!isMobile) {
     return <Desktop />
   }
     return (
-      <div>
+      <div className={ms.wrap}>
         <Intro />
         <Hello />
         <Guide />

@@ -25,9 +25,9 @@ const Outro = () => {
           <p>
             Возникли проблемы?
             <br />
-            напишите нам:&nbsp;
-            <a className={s.link} href="mailto:ask@pogrujenie.ru">
-              @pogrujenie
+            напишите нам:&nbsp;<br />
+            <a className={s.link} target="_blank" href="http://www.ctm-nn.ru">
+              Центр театрального мастерства
             </a>
           </p>
         </div>

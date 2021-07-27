@@ -4,6 +4,7 @@ import { Link } from "react-scroll"
 import { Wrapper } from '../../components'
 import Arrow from '../../assets/arrow.svg'
 import s from "./styles.module.css"
+import ms from "../../main_styles.module.css"
 
 const Hello = () => {
   return (
@@ -21,10 +22,10 @@ const Hello = () => {
           </div>
           <div className={s.textBig}>
             <div className={s.titleBig}>Привет,</div>
-            вы на тестовой странице проекта «ПОГРУЖЕНИЕ»
+            вы на тестовой странице проекта «ПОГРУЖЕНИЕ ПРОМЕНАД»
           </div>
           <div className={s.footer}>
-            <img className={s.arrow} src={Arrow} />
+            <img className={ms.arrow} src={Arrow} />
           </div>
         </div>
       </Link>

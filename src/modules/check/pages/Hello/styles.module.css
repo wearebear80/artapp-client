@@ -3,7 +3,7 @@
   height: 100vh;
   min-height: 500px;
   background-color: #B55126;
-  padding: 75px 30px;
+  padding: 60px 30px;
   position: relative;
 }
 
@@ -41,9 +41,4 @@
   width: 100vw;
   text-align: center;
   bottom: 80px;
-}
-
-.arrow {
-  width: 65px;
-  height: 34px;
 }

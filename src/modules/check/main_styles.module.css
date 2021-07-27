@@ -1,0 +1,18 @@
+.arrow {
+  width: 65px;
+  height: 34px;
+  animation: arrow-hover 1s linear infinite;
+  position: relative;
+}
+
+@keyframes arrow-hover {
+    0% {
+        top:0;
+    }
+    50% {
+        top:10px;
+    }
+    100% {
+        top:0;
+    }
+}

@@ -6,7 +6,7 @@ import VideoSrc from "../../assets/test.MOV"
 import Arrow from "../../assets/arrow.svg"
 import Play from "../../assets/play.svg"
 import Stop from "../../assets/stop.svg"
-import Poster from "./assets/poster.png"
+import ms from "../../main_styles.module.css"
 import s from './styles.module.css'
 
 type TState = 'ready' | 'paused' | 'play'
@@ -21,11 +21,7 @@ const Controls: React.FC<TControlProps> = ({ state, onPlay }) => {
     return <img onClick={onPlay} className={s.play} src={Play} />
   }
 
-  if (state === "paused") {
-    return <img onClick={onPlay} className={s.stop} src={Stop} />
-  }
-
-  return null
+  return <img onClick={onPlay} className={s.stop} src={Stop} />
 }
 
 const Video = () => {
@@ -49,7 +45,6 @@ const Video = () => {
       <video
         id="video"
         ref={videoEl}
-        onClick={onPlay}
         className={s.video}
         preload="metadata"
       >
@@ -67,7 +62,7 @@ const Video = () => {
         duration={1000}
       >
         <div className={s.footer}>
-          <img className={s.arrow} src={Arrow} />
+          <img className={ms.arrow} src={Arrow} />
         </div>
       </Link>
     </Wrapper>

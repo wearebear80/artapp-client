@@ -4,6 +4,7 @@ import { Link } from "react-scroll"
 import { Wrapper } from "../../components"
 import Arrow from "../../assets/arrow.svg"
 import s from "./styles.module.css"
+import ms from "../../main_styles.module.css"
 
 const Check = () => {
   return (
@@ -13,7 +14,7 @@ const Check = () => {
         to="video"
         spy={true}
         smooth={true}
-        duration={1000}
+        duration={500}
       >
         <div id="guide" className={s.container}>
           <div className={s.title}>
@@ -28,7 +29,7 @@ const Check = () => {
             билета
           </div>
           <div className={s.footer}>
-            <img className={s.arrow} src={Arrow} />
+            <img className={ms.arrow} src={Arrow} />
           </div>
         </div>
       </Link>
