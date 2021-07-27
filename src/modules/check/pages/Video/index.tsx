@@ -6,6 +6,7 @@ import VideoSrc from "../../assets/test.MOV"
 import Arrow from "../../assets/arrow.svg"
 import Play from "../../assets/play.svg"
 import Stop from "../../assets/stop.svg"
+import Poster from "./assets/poster.png"
 import s from './styles.module.css'
 
 type TState = 'ready' | 'paused' | 'play'
@@ -45,9 +46,16 @@ const Video = () => {
 
   return (
     <Wrapper>
-      <video id="video" ref={videoEl} onClick={onPlay} className={s.video}>
-        <source src={VideoSrc} />
+      <video
+        id="video"
+        ref={videoEl}
+        onClick={onPlay}
+        className={s.video}
+        preload="metadata"
+      >
+        <source src={VideoSrc + '#t=0.1'} />
       </video>
+      <div className={s.text}>пожалуйста, включите видео</div>
       <div className={s.controls}>
         <Controls state={state} onPlay={onPlay} />
       </div>
